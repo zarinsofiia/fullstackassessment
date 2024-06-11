@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div id="container">
+        <img src="mulah.png" alt="Mulah Logo"> <!--Logo-->
+
+        <div id="registration">Registration</div>
+
+        <div id="fillUp">Please fill up your details.</div>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter name" required>
+        <div id="enter">*Please insert a name.</div>
+
+        <label for="birthday">Birthday</label>
+        <div class="birthday-inputs">
+            <input type="text" id="day" placeholder="DD" maxlength="2" required class="left-aligned">
+            <input type="text" id="month" placeholder="MM" maxlength="2" required class="center-aligned">
+            <input type="text" id="year" placeholder="YYYY" maxlength="4" required class="right-aligned">
+        </div>
+        <div id="enter">*Please insert your birthday.</div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <div id="enter">*Please insert a valid email address.</div> 
+        
+        
+        <label class="checkbox-label" for="myCheckbox">
+            <input type="checkbox" id="myCheckbox" name="myCheckbox" onchange="toggleEmailField()"> 
+            <span class="no-email">No email address</span>
+        </label>
+
+        <button onclick="submitData()">Continue</button>
+
+        <hr>
+
+    </div>
+
+    <div id="poweredBy"> &copy Powered by <a href="https://mulahrewards.com/">MulahRewards.com</a></div>
+
+    <!-- Js  -->
+    <script src="script2.js">
+            
+    </script>
+
+</body>
+
+</html>
